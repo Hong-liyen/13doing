@@ -14,8 +14,8 @@ var swiper = new Swiper(".mySwiper", {
         480: {
             spaceBetween: 110,
         },
-        375: {
-            spaceBetween: 80,
+        360: {
+            spaceBetween: 60,
         },
     },   
     centeredSlides: true,
