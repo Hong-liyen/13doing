@@ -599,3 +599,19 @@ h3::after{
         font-size: .8em;
     }
 }
+
+@media only screen and (max-width: 360px) {
+    .map .row:nth-child(1) .item:first-child img {
+        width: 6em;
+    }
+    .map .row:nth-child(1) .item:first-child::after {
+        left: -50px;
+        bottom: -10em;
+        width: 280px;
+        background-size: 55%;
+    }
+    .map .row:nth-child(2) .item:first-child::after {
+        left: 3em;
+        top: -5em;
+    }
+}
