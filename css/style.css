@@ -234,8 +234,9 @@ h3::after{
     width: 15em;
 } 
 .map .row:nth-child(3) .item:last-child h6{
-    width: 220px;
+    width: 250px;
     background: url('../images/map_title_bg_long.png') center center no-repeat;
+    background-size: contain;
 }
 .map .row:nth-child(3) .item:first-child > div {
     padding: 2em;
@@ -368,10 +369,11 @@ h3::after{
         width: 300px;
         background-size: 80%;
     }
-    .map .row:nth-child(2) .item:first-child::after{
+    .map .row:nth-child(2) .item::after{
         bottom: -6em;
         left: 10em;
-        width: 300px;
+        width: 70px;
+        height: 650px;
         background-size: 1.5em;
     }
     .map .row:nth-child(3) .item:first-child::after{
@@ -401,7 +403,7 @@ h3::after{
         top: 18%
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .town{
         padding: 5em 0;
     }
@@ -439,7 +441,7 @@ h3::after{
     }
     .map .row:nth-child(1) .item:first-child::after{
         left: -10px;
-        bottom: -10em;
+        bottom: -9em;
         width: 300px;
         background-size: 75%;
     }
@@ -484,6 +486,12 @@ h3::after{
     }
 }
 @media only screen and (max-width: 480px) {
+    .map .row:nth-child(3) .item:first-child::after{
+        width: 165px;
+    }
+    .map .row:nth-child(3) .item:last-child h6 {
+        width: 200px;
+    }
     .swiper-button-prev, .swiper-button-next{
         width: 20px;
         height: 20px;
@@ -503,11 +511,33 @@ h3::after{
     .room a{
         font-size: .8em;
     }
+    .map .item h6 {
+        font-size: 1.1em;
+        width: 100px;
+        background-size: contain;
+    }   
+    .map .row:nth-child(2) .item:first-child::after{
+        left: 1em;
+        top: -5em;
+        width: 447px;
+        background-size: 1.5em;
+    }
+    .map .row:nth-child(3) .item:first-child .img {
+        position: absolute;
+        right: 70px;
+        top: 0;
+    }
+    .map .row:nth-child(3) .item:first-child::after {
+        bottom: -6em;
+        left: 5em;
+        width: 165px;
+        background-size: 7em;
+    }
     .map .row:nth-child(3) .item:first-child > div{
         padding: .5em 0;
     }
     .map .txt h6{
-        font-size: .75em;
+        font-size: .6em;
     }
     .map .txt p {
         font-size: .5em;
@@ -517,8 +547,11 @@ h3::after{
     }
     .map .row:nth-child(2) .item{
         display: flex;
-        justify-content: start;
+        justify-content: end;
         flex-direction: row;
+    }
+    .map .row:nth-child(2) .item img{
+        width: 5em;
     }
     .map .row:nth-child(2) .item > div{
         display: flex;
@@ -530,7 +563,7 @@ h3::after{
         width: 7em;
     }
     .map .row:nth-child(3) .item:last-child{
-        justify-content: center;
+        justify-content: end;
     }
     .right-fixed img {
         width: 3em;
