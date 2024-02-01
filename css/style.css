@@ -517,9 +517,8 @@ h3::after{
         background-size: contain;
     }   
     .map .row:nth-child(2) .item:first-child::after{
-        left: 1em;
+        left: 5em;
         top: -5em;
-        width: 447px;
         background-size: 1.5em;
     }
     .map .row:nth-child(3) .item:first-child .img {
