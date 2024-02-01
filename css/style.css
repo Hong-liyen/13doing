@@ -536,7 +536,7 @@ h3::after{
         background-size: 50%, 50%, 100%;
     }
     .swiper-slide-active .prev, .swiper-slide-active .next{
-        top: 35px;
+        top: 50px;
         font-size: .5em;
     }
     .room .title{
