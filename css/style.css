@@ -491,6 +491,9 @@ h3::after{
     .visit .content p{
         padding-left: 10px;
     }
+    .room .info .row{
+        padding: 0;
+    }
     .room .txt{
         padding-top: 0;
     }
