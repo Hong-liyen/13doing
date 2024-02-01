@@ -1,6 +1,6 @@
 @import url(../font/Songti.ttc);
 body,html{
-    font-family: 'Songti';
+    font-family: '';
     scroll-behavior: smooth;
     background:url('../images/bg.png') repeat #F4F2F1;
     color: #030102;
@@ -484,6 +484,20 @@ h3::after{
     }
 }
 @media only screen and (max-width: 480px) {
+    .swiper-button-prev, .swiper-button-next{
+        width: 20px;
+        height: 20px;
+        top: 20%;
+    }
+    .visit .content p{
+        padding-left: 10px;
+    }
+    .room .txt{
+        padding-top: 0;
+    }
+    .room h4{
+        font-size: 1.4em;
+    }
     .map .row:nth-child(3) .item:first-child > div{
         padding: .5em 0;
     }
@@ -520,8 +534,8 @@ h3::after{
         background-size: 50%, 50%, 100%;
     }
     .swiper-slide-active .prev, .swiper-slide-active .next{
-        top: 0;
-        font-size: .3em;
+        top: 23px;
+        font-size: .5em;
     }
     .room .title{
         background-size: 30%;
