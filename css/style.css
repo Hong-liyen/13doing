@@ -1,0 +1,550 @@
+@import url(../font/Songti.ttc);
+body,html{
+    font-family: 'Songti';
+    scroll-behavior: smooth;
+    background:url('../images/bg.png') repeat #F4F2F1;
+    color: #030102;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.ls-5{
+    letter-spacing: 5px;
+}
+.lr{
+    writing-mode: vertical-lr;
+}
+.rl{
+    writing-mode: vertical-rl;
+}
+h3{
+    background: url('../images/h3_title_bg.png') top center no-repeat;
+    background-size: contain;
+    position: relative;
+    padding: 5px;
+    letter-spacing: .3em;
+}
+h3::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 2em;
+    left: 50%;
+    background: #707070;
+}
+.town .title h3, .town .title p,.visit .title h3, .visit .title p{
+    margin: 0;
+}
+.banner img{
+    width: 100%;
+}
+/* memory */
+.memory{
+    background: url('../images/memory_bg.png') 20% 25% no-repeat, url('../images/carousel_bg.png') left 30% no-repeat;
+}
+.memory p{
+    margin-right: 10em;
+    padding-bottom: 8em;
+}
+/* //memory */
+/* room */
+.room .title{
+    background: url('../images/room_title_bg.png') left center no-repeat;
+    background-size: contain;
+    width: 15em;
+    padding-left: 3em;
+}
+.room h6{
+    color: rgba(3,1,2,.5);
+}
+.room .txt{
+    position: relative;
+    font-size: .8em;
+    padding-top: 3.5em;
+}
+.room a{
+    text-decoration: none;
+    color: #fff;
+    background: #5E6D8E;
+    border-radius: 0px 0px 8px 8px;
+    font-size: 1.5em;
+    position: absolute;
+    padding: .8em 1em;
+    top: -10px;
+    right: 0;
+    box-shadow: 0px 3px 6px rgba(0,0,0,.15);
+}
+/* //room */
+/* swiper */
+.swiper-button-prev,.swiper-button-next{
+    background: url('../images/arrow.png') center center no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+.swiper-button-prev{
+    top: 35%;
+    left: 5%;
+}
+.swiper-button-next{
+    transform: rotate(180deg);
+    top: 35%;
+    right: 5%;
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+    color: transparent;
+}
+.swiper-wrapper{
+    align-items: end;
+}
+.swiper-slide{
+    width: 50%;
+}
+.swiper-slide .prev, .swiper-slide .next{
+    display: none;
+}
+.swiper-slide img{
+    opacity: .2;
+    box-shadow: 0px 3px 6px rgba(0,0,0,.75);
+}
+.swiper-slide-active{
+    position: relative;
+}
+.swiper-slide-active .prev, .swiper-slide-active .next{
+    position: absolute;
+    display: block;
+    font-size: .8em;
+}
+.swiper-slide-active .prev{
+    left: -45%;
+    top: 25%;
+}
+.swiper-slide-active .next{
+    right: -45%;
+    top: 25%;
+}
+.swiper-slide-active img{
+    opacity: 1;
+    transform: scale(1.5);
+}
+.swiper-slide .txt{
+    margin-top: 2em;
+    opacity: 0;
+}
+.swiper-slide-active .txt{
+    margin-top: 8em;
+    opacity: 1;
+}
+/* //swiper */
+/* visit */
+.visit{
+    background: url('../images/visit_bg_01.png') left top no-repeat, url('../images/visit_bg_02.png') 80% center no-repeat, linear-gradient(to top, transparent, rgba(255,255,255,.85) ,transparent);
+    padding: 5em 0;
+}
+.visit .title p, .town .title p{
+    font-size: 1.2em;
+}
+.visit .content p{
+    position: relative;
+    padding-left: 20px;
+}
+.visit .content p::before{
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 8px solid;
+    border-color: transparent transparent transparent #030102;
+}
+.visit .item{
+    margin-bottom: 50px;
+}
+/* //visit */
+/* town */
+.town{
+    padding: 10em 0;
+    background: url('../images/map_bg.png') center 50vh no-repeat, url('../images/town_bg02.png') center top no-repeat, linear-gradient(to top, rgba(255,0,0,0), rgba(255,255,255,1));
+    background-size: cover, contain;
+}
+.town .introduce{
+    background: url('../images/town_bg01.png') 25% bottom no-repeat;
+}
+.town .introduce .eng img{
+    width: 3em;
+}
+.map .item h6{
+    font-size: 1.1em;
+    display: inline-block;
+    background: url('../images/map_title_bg.png') center center no-repeat;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+}
+.map .row .item{
+    position: relative;
+}
+.map .row:nth-child(1) .item{
+    display: flex;
+    align-items: end;
+    width: 40em;
+    margin: 0 auto;
+} 
+.map .row:nth-child(2) .item, .map .row:nth-child(3) .item:last-child{
+    display: flex;
+    justify-content: end;
+}
+.map .row:nth-child(1) .item::after{
+    position: absolute;
+    content: '';
+    bottom: -14em;
+    left: 35px;
+    width: 500px;
+    height: 500px;
+    background: url('../images/map_mark_01.png') center center no-repeat;
+}
+.map .row:nth-child(2) .item > div{
+    display: flex;
+    flex-direction: column;
+}
+.map .row:nth-child(2) .item::after{
+    position: absolute;
+    content: '';
+    bottom: -5em;
+    left: 22em;
+    width: 500px;
+    height: 500px;
+    background: url('../images/map_mark_02.png') center center no-repeat;
+}
+.map .row:nth-child(3) .item:first-child::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 18em;
+    width: 600px;
+    height: 600px;
+    background: url('../images/map_mark_03.png') center center no-repeat;
+}
+.map .row:nth-child(1) .item img{
+    width: 28em;
+} 
+.map .row:nth-child(2) .item img{
+    width: 15em;
+} 
+.map .row:nth-child(3) .item:last-child h6{
+    width: 220px;
+    background: url('../images/map_title_bg_long.png') center center no-repeat;
+}
+.map .row:nth-child(3) .item:first-child > div {
+    padding: 2em;
+    position: relative;
+}
+.map .row:nth-child(3) .item:first-child .img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.map .title{
+    padding: 2em 4em;
+}
+/* //town */
+/* right-fixed */
+.right-fixed{
+    text-align: center;
+    position: fixed;
+    right: 5px;
+    top: 50%;
+    z-index: 1;
+}
+.right-fixed img{
+    width: 50%;
+}
+.right-fixed .icons a{
+    display: block;
+    margin-bottom: 10px;
+}
+.right-fixed .dots a{
+    width: 15px;
+    height: 15px;
+    margin: 0 auto 20px;
+    border: 1px solid #FDFDFD;
+    transform: rotate(45deg);
+    border-radius: 4px;
+}
+.right-fixed .dots a.active,.right-fixed .dots a:hover{
+    background-color: #fff;
+}
+/* //right-fixed */
+/* footer */
+.footer{
+    padding-top: 8em;
+    background: url('../images/footer_bg.png') bottom;
+    background-size: cover;
+}
+.footer .title{
+    display: inline-block;
+    position: relative;
+}
+.footer .title::after{
+    position: absolute;
+    content: '';
+    width: 120%;
+    height: 12px;
+    background-color: rgba(62, 97, 113, .25);
+    border-radius: 8px;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.footer a{
+    display: inline-block;
+    text-decoration: none;
+    color: #5E6D8E;
+    margin-right: 2em;
+}
+.footer .sns a{
+    margin-right: 2em;
+}
+.footer .copyright, .copyright a{
+    color: #BEB1B1;
+}
+.footer .info{
+    width: 30em;
+    margin: 0 auto;
+}
+
+.footer .info span{
+    display: inline-block;
+    width: 8em;
+    padding: 0 2em;
+}
+/* //footer */
+@media only screen and (max-width: 1440px) { 
+    .memory{
+        background: url('../images/memory_bg.png') 10% 30% no-repeat, url('../images/carousel_bg.png') center 50% no-repeat;
+    }
+    /* swiper */
+    .swiper-slide-active .txt{
+        margin-top: 4em;
+    }
+    .swiper-button-prev,.swiper-button-next{
+        width: 40px;
+        height: 40px;
+    }
+    /* //swiper */
+    /* map */
+    .map .row:nth-child(2) .item::after{
+        left: 12em;
+    }
+    .map .row:nth-child(3) .item:first-child::after{
+        left: 10em;
+    }
+    /* //map */
+}
+@media only screen and (max-width: 1200px) { 
+    .swiper-button-prev,.swiper-button-next{
+        width: 30px;
+        height: 30px;
+    }
+    .swiper-button-prev{
+        left: 8%;
+    }
+    .swiper-button-next{
+        right: 8%;
+    }
+}
+@media only screen and (max-width: 992px) {  
+    .memory{
+        background: url('../images/memory_bg.png') 10% 35% no-repeat, url('../images/carousel_bg.png') center 50% no-repeat;
+    }
+    .memory p{
+        margin-right: 5em;
+    }
+    .map .row:nth-child(1) .item::after{
+        bottom: -10em;
+        left: -2em;
+        width: 300px;
+        background-size: 80%;
+    }
+    .map .row:nth-child(2) .item:first-child::after{
+        bottom: -6em;
+        left: 10em;
+        width: 300px;
+        background-size: 1.5em;
+    }
+    .map .row:nth-child(3) .item:first-child::after{
+        bottom: -6em;
+        left: 10em;
+        width: 300px;
+        background-size: 8em;
+    }
+    .map .item h6{
+        font-size: .8em;
+    }
+    .visit .content h6, .visit .content p, .map .item p, .town p{
+        font-size: .6em;
+    }
+    .room a{
+        font-size: 1em;
+        padding: 0.5em .8em;
+        top:-35px;
+    }
+    .room h6{
+        font-size: .8em;
+    }
+    .room p, .swiper-slide-active .prev, .swiper-slide-active .next{
+        font-size: .6em;
+    }
+    .swiper-slide-active .prev, .swiper-slide-active .next{
+        top: 18%
+    }
+}
+@media only screen and (max-width: 768px) {
+    .town{
+        padding: 5em 0;
+    }
+    .town h3,.visit h3 {
+        font-size: 1.8em;
+    }
+    .town .title p, .visit .title p {
+        font-size: 1.2em;
+    }
+    .visit{
+        background-size: 70%, 70%, 100%;
+    }
+    .visit .title{
+        line-height: 1.5;
+    }
+    .room .title{
+        background-size: 50%;
+        width: 12em;
+        padding-left: 2em;
+    }
+    .room .title h4{
+        font-size: 1.2em;
+    }
+    .room .title p{
+        font-size: .8em;
+    }
+    .memory{
+        background: url('../images/memory_bg.png') 10% 40% no-repeat, url('../images/carousel_bg.png') center top no-repeat;
+        background-size: 30%, 100%;
+    }
+    .memory p{
+        margin-bottom: 1em;
+        margin-right: 3em;
+        font-size: .8em;
+    }
+    .map .row:nth-child(1) .item:first-child::after{
+        left: -10px;
+        bottom: -10em;
+        width: 300px;
+        background-size: 75%;
+    }
+    .map .row:nth-child(2) .item:first-child::after{
+        left: 3em;
+        width: 300px;
+        background-size: 1.5em;
+    }
+    .map .row:nth-child(3) .item:first-child .img{
+        width: 30%;
+    }
+    .town .introduce .eng{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;    
+    }
+    .town .introduce .eng img{
+        width: 1.5em;
+    }
+    .map .row:nth-child(1) .item:first-child img{
+        width: 12em;
+    }
+
+    .visit .content p::before{
+        top: 8px;
+        border: 5px solid;
+        border-color: transparent transparent transparent #030102;
+    }
+    .copyright{
+        font-size: .8em;
+    }
+    .footer .info{
+        width: 80%;
+        font-size: .8em;
+    }
+    .footer .info span{
+        display: inline-block;
+        padding: 0 2em;
+    }
+    .right-fixed img{
+        width: 3.5em;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .map .row:nth-child(3) .item:first-child > div{
+        padding: .5em 0;
+    }
+    .map .txt h6{
+        font-size: .75em;
+    }
+    .map .txt p {
+        font-size: .5em;
+    }
+    .map .row:nth-child(1) .item img{
+        width: 7em;
+    }
+    .map .row:nth-child(2) .item{
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+    }
+    .map .row:nth-child(2) .item > div{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: row;
+    }
+    .map .row:nth-child(3) .item img{
+        width: 7em;
+    }
+    .map .row:nth-child(3) .item:last-child{
+        justify-content: center;
+    }
+    .right-fixed img {
+        width: 3em;
+    }
+    .visit{
+        background-size: 50%, 50%, 100%;
+    }
+    .swiper-slide-active .prev, .swiper-slide-active .next{
+        top: 0;
+        font-size: .3em;
+    }
+    .room .title{
+        background-size: 30%;
+        width: 8em;
+        padding-left: 1em;
+    }
+    .room .title h3{
+        font-size: 1em;
+    }
+    .room .title p{
+        font-size: .6em;
+    }
+    .memory{
+        background: url('../images/memory_bg.png') 10% 50% no-repeat, url('../images/carousel_bg.png') center top no-repeat;
+        background-size: 50%, 100%;
+    }
+    .footer .info{
+        width: 100%;
+    }
+    .footer .info span{
+        width: 5em;
+    }
+    .footer .info{
+        font-size: .8em;
+    }
+}
