@@ -1,6 +1,6 @@
-@import url(../font/Songti.ttc);
+@import url(../font/SourceHanSans.ttc);
 body,html{
-    font-family: '';
+    font-family: 'SourceHanSans';
     scroll-behavior: smooth;
     background:url('../images/bg.png') repeat #F4F2F1;
     color: #030102;
