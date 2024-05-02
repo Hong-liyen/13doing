@@ -14,9 +14,6 @@ var swiper = new Swiper(".mySwiper", {
         480: {
             spaceBetween: 110,
         },
-        360: {
-            spaceBetween: 60,
-        },
     },   
     centeredSlides: true,
     grabCursor: true,
@@ -39,3 +36,8 @@ $('.dots a').click(function(){
 });
 }
 scrollNav();
+
+
+$(document).ready(function () {
+	new WOW().init();
+});
