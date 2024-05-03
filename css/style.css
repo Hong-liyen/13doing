@@ -132,6 +132,12 @@ h3::after{
     opacity: 1;
 } */
 /* //swiper */
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
 /* visit */
 .visit{
     background: url('../images/visit_bg_01.png') left top no-repeat, url('../images/visit_bg_02.png') 80% center no-repeat, linear-gradient(to top, transparent, rgba(255,255,255,.85) ,transparent);
@@ -159,13 +165,17 @@ h3::after{
 }
 /* //visit */
 /* town */
+.svg{
+    animation: svg_t 1.5s linear infinite alternate;
+}
+@keyframes svg_t {
+    0%{ transform: translateY(0);}
+    100%{ transform: translateY(-5px);}
+}
 .town{
     padding: 10em 0;
     background: url('../images/map_bg.png') center 50vh no-repeat, url('../images/town_bg02.png') center top no-repeat, linear-gradient(to top, rgba(255,0,0,0), rgba(255,255,255,1));
     background-size: cover, contain;
-}
-.town .introduce{
-    background: url('../images/town_bg01.png') 25% bottom no-repeat;
 }
 .town .introduce .eng img{
     width: 3em;
@@ -406,6 +416,12 @@ h3::after{
     } */
 }
 @media only screen and (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
     .town{
         padding: 5em 0;
     }
